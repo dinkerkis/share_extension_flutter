@@ -3,10 +3,14 @@
 A new Flutter project.
 
 ## Screenshot
-1. Crop Image
+1. Share image/video
 
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 14 02 28](https://user-images.githubusercontent.com/82141553/141768303-daecea11-1ac3-47b6-8043-3b8978d8c7ab.png) ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 14 02 31](https://user-images.githubusercontent.com/82141553/141768371-f9f54a82-215f-41b2-8340-1eaa9283b150.png)
 
-2. Crop/Trim Video
+2. Share text and view URL
+
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 13 39 25](https://user-images.githubusercontent.com/82141553/141768135-226f5c3c-3add-45e7-805e-8cc06a50fa84.png)
+
 
 
 ## Getting Started
@@ -17,10 +21,12 @@ Please follow these steps:
 1. https://pub.dev/packages/receive_sharing_intent 
     
 To show you app in the share sheet, like this:
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 15 51 20](https://user-images.githubusercontent.com/82141553/141768753-50b2bb80-f405-40b6-9260-afdefa590fab.png) ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 15 52 18](https://user-images.githubusercontent.com/82141553/141768892-807c2063-ba7e-4877-9820-9c509ecbd4ce.png)
 
 2. https://pub.dev/packages/url_launcher
 
 To open the link for url, like this:
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 15 55 02](https://user-images.githubusercontent.com/82141553/141769176-35e58a1f-f500-41e5-b9b8-f6c0a5ae495b.png)
 
 
 
@@ -72,7 +78,6 @@ ShareExtensionFlutter(
         secondaryColor: Colors.black,
         backgroundColor: Colors.white,
         sharedTextColor: Colors.black,
-        size: Size(500, 500),
         onCancelPressed: () {
 
         },
@@ -82,7 +87,8 @@ ShareExtensionFlutter(
       ),
 
 ``` 
-##4. Description of arguments and Other benefits
+
+## 4. Description of arguments and Other benefits
 
 ``` 
   final bool shouldShowAppBar; // Do you want to show cancel and done button?
@@ -100,3 +106,19 @@ ShareExtensionFlutter(
   final TextStyle? urlSiteNameStyle; //It is the style for url site name .
   final Size size; // It is the size of the content.
 ``` 
+
+1. shouldShowAppBar = true
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 16 24 42](https://user-images.githubusercontent.com/82141553/141769912-edb4f800-3561-4422-ba35-f2aa638aaa4d.png)
+
+2. size = Size(500, 500)
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 14 24 42](https://user-images.githubusercontent.com/82141553/141770083-eb4041c2-fc69-481a-8e37-065c21d71408.png) ![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 14 24 53](https://user-images.githubusercontent.com/82141553/141770128-115d8ddb-6a35-4438-8acd-9b7319a4f96f.png)
+
+3. shouldEditable = true
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 13 46 07](https://user-images.githubusercontent.com/82141553/141770393-3e069d17-d13d-4f1d-9c39-d0dded942bfd.png)
+
+4. shouldPreview = true
+![Simulator Screen Shot - iPhone 12 Pro Max - 2021-11-15 at 16 29 19](https://user-images.githubusercontent.com/82141553/141770550-cd2c3c0c-31de-420c-b9aa-7ac1d1eba674.png)
+
+
+
+
